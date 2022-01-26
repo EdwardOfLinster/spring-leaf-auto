@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Leaf Auto</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="hero-background form"></div>
+        <header class="main-header">
+            <div class="header-info">
+                <div class="info-left">
+                    <div class="main-logo">
+                        <img src="img/spring_leaf_logo.png" title="SpringLeaf Logo" width="100%">
+                        <h1>Spring Leaf Auto</h1>
+                    </div>
+                    <div class="dealership-info">
+                        <h2>Financing BC Residents</h2>
+                        <h2>One Vehicle at a Time regardless of credit Situation</h2>
+                    </div>
+                </div>
+                <div class="info-right">
+                    <div class="contact-info">
+                        <a href="tel:+16041234567">(604)123-4567</a>
+                        <address>20247 Langley Bypass Langley, BC V3A 5E8</address>
+                        <h2>Monday-Saturday 10:00AM — 6:00PM</h2>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-bar">
+                <ul class="gb-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="financing.html">Financing</a></li>
+                    <li><a class="featured" href="approval-form.html">Approval Form</a></li>
+                </ul>
+                <div class="car-search">
+                    <input type="search" placeholder="Honda Civic" >
+                    <button><img src="img/icons/searchicon.png" height="100%"></button>
+                </div>
+
+            </nav>
+        </header>
+        <section class="form-hero">
+            <h2>Approval Form</h2>
+        </section>
+        <section class="approval-form">
+            <form action="/action_page.php">
+                <div class="form-colums">
+                    <div class="form-left">
+                        <label for="fname">Name:</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="First Name" required size="20">
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" required size="20"><br><br>
+                        <label>Gender</label><br>
+                        <input type="radio" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" value="other">
+                        <label for="other">Other</label>
+                        <br><br>
+                        <label for="email">Email*</label><br>
+                        <input type="email" id="email" name="email" placeholder="enzoferrari@gmail.com" required size="40"><br><br>
+                        <label for="pnumber">Phone Number</label><br>
+                        <input type="tel" id="pnumber" name="pnumber" placeholder="604-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                        <label for="birthday">Date of Birth*</label><br>
+                        <input type="date" id="birthday" name="birthday" required><br><br>
+                        <label for="street">Street*</label><br>
+                        <input type="text" id="street" name="street" placeholder="20247 Langley Bypass" required><br>
+                        <label for="apt">Apartment/Suite</label>
+                        <br>
+                        <input type="text" id="apt" name="apt" placeholder="Unit 204"><br>
+                        <label for="city">City*</label><br>
+                        <input type="text" id="city" name="city" placeholder="Langley" required><br>
+                        <label for="province">Province*</label><br>
+                        <select id="province" name="province">
+                            <option value="AB">Alberta</option>
+                            <option value="BC" selected>British Columbia</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NF">Newfoundland & Labrador</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PEI">Prince Edward Island</option>
+                            <option value="QC">Quebec</option>
+                            <option value="SK">Saskatchewan</option>
+                        </select>
+                        <br>
+                        <label for="pcode">Postal Code*</label><br>
+                        <input type="text" id="pcode" name="pcode" placeholder="V3A 5E8" pattern="[A-Za-z]{1}[1-9]{1}[A-Za-z] {1}[1-9]{1}[A-Za-z]{1}[1-9]{1}">
+                    </div>
+                    <div class="form-right">
+                        <label for="covidwork">Did you work during covid?</label><br>
+                        <input type="radio" id="yescovidwork" name="covidwork" value="yes">
+                        <label for="yescovidwork">Yes</label>
+                        <input type="radio" id="nocovidwork" name="covidwork" value="no">
+                        <label for="nocovidwork">No</label>
+                        <br><br>
+                        <label for="carsize">What Type of Car are you looking for?</label><br>
+
+                        <input type="checkbox" name="cartype" value="convertible">
+                        <label for="convertible">Convertible</label><br>
+                        <input type="checkbox" name="cartype" value="coupe">
+                        <label for="coupe">Coupe</label><br>
+                        <input type="checkbox" name="cartype" value="sedan">
+                        <label for="sedan">Sedan</label><br>
+                        <input type="checkbox" name="cartype" value="hatchback">
+                        <label for="hatchback">Hatchback</label><br>
+                        <input type="checkbox" name="cartype" value="suv">
+                        <label for="suv">SUV</label><br>
+                        <input type="checkbox" name="cartype" value="truck">
+                        <label for="truck">Truck</label><br>
+                        <input type="checkbox" name="cartype" value="van">
+                        <label for="van">Van</label><br>
+                        <br><br>
+                        <label for="addcomments">Additional Comments:</label><br>
+                        <textarea placeholder="Any grey colored cars?" id="addcomments" name="addcomments" rows="4" cols="50"></textarea>
+                        <br>
+                        <label for="legal">Terms & Condition</label>
+                        <br>
+                        <textarea id="legal" name="legal" rows="6" cols="75" readonly>Occasionally there may be information on our site or in the Service that contains typographical errors, inaccuracies or omissions that may relate to product descriptions, pricing, promotions, offers, product shipping charges, transit times and availability. We reserve the right to correct any errors, inaccuracies or omissions, and to change or update information or cancel orders if any information in the Service or on any related website is inaccurate at any time without prior notice (including after you have submitted your order).
+
+                        We undertake no obligation to update, amend or clarify information in the Service or on any related website, including without limitation, pricing information, except as required by law. No specified update or refresh date applied in the Service or on any related website, should be taken to indicate that all information in the Service or on any related website has been modified or updated.
+                        We may disclose your personal information if we are required by law to do so.
+
+                        Payment:
+
+                        If you use your credit card to reserve a vehicle or order parts or a service, then Spring Leaf Auto stores your credit card data. It is encrypted through the Payment Card Industry Data Security Standard (PCI-DSS). Your purchase transaction data is stored only as long as is necessary to complete your purchase transaction. After that is complete, your purchase transaction information is deleted.
+
+                        All direct payment gateways adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, MasterCard, American Express and Discover.
+
+                        PCI-DSS requirements help ensure the secure handling of credit card information by our website and its service providers.
+                        </textarea><br>
+                        <input type="radio" id="termsandconditions" name="termsandconditions" value="Agree">
+                        <label for="termsandconditions">I have read & agree to the terms and conditions</label>
+                        <br>
+                    </div>
+                </div>
+                <input type="submit">
+            </form>
+        </section>
+        <section class="directions">
+            <h2 class="section-header maps">Directions</h2>
+            <iframe class="maps-integration" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1846.6631193844262!2d-122.66189204370563!3d49.11369433466885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d1d564d22457%3A0x4d0a97e62ea6c80b!2sTMT%20Auto%20Finance!5e0!3m2!1sen!2sca!4v1616179169138!5m2!1sen!2sca"></iframe>
+        </section>
+        <footer>
+            <nav class="ft-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="financing.html">Financing</a></li>
+                    <li><a href="approval-form.html">Approval Form</a></li>
+                </ul>
+            </nav>
+            <p class="legal-info">Spring Leaf Auto © 2021 | For Education Purposes Only</p>
+        </footer>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="js/main.js"></script>  
+</html>
